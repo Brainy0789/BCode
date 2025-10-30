@@ -21,7 +21,7 @@ if %ERRORLEVEL%==0 (
 )
 
 REM Compile
-%COMPILER% src\main.c src\vm.c -o output\BCode
+%COMPILER% src\main.c src\vm.c src\compiler.c -o output\BCode
 if %ERRORLEVEL%==0 (
     echo Compilation succeeded. Running...
     output\BCode

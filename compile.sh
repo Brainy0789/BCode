@@ -14,7 +14,7 @@ else
 fi
 
 # Compile
-if $COMPILER src/main.c src/vm.c -o output/BCode; then
+if $COMPILER src/main.c src/vm.c source/compiler.c -o output/BCode; then
     echo "Compilation succeeded. Running..."
     ./output/BCode
 else
