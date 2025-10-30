@@ -6,6 +6,6 @@ char vers[] = "0.1.0";
 int main()
 {
     printf("BCode Compiler v%s\n", vers);
-    interp("tests/test.ba");
+    interp("tests/test.ba", true);
     return 0;
 }
